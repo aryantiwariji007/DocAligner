@@ -1,0 +1,247 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\ASUS\\Desktop\\Documents standards']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [29568] using WatchFiles
+INFO:     Started server process [28176]
+INFO:     Waiting for application startup.
+DEBUG: Loaded DATABASE_URL: postgresql+asyncpg://postgres:postgres@127.0.0.1:5433/docstandards
+2026-02-20 16:03:38,373 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+2026-02-20 16:03:38,373 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-02-20 16:03:38,393 INFO sqlalchemy.engine.Engine select current_schema()
+2026-02-20 16:03:38,393 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-02-20 16:03:38,399 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+2026-02-20 16:03:38,399 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-02-20 16:03:38,404 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-02-20 16:03:38,409 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,409 INFO sqlalchemy.engine.Engine [generated in 0.00033s] ('folder', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,430 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,430 INFO sqlalchemy.engine.Engine [cached since 0.02102s ago] ('document', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,432 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,433 INFO sqlalchemy.engine.Engine [cached since 0.02353s ago] ('standard', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,435 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,435 INFO sqlalchemy.engine.Engine [cached since 0.02608s ago] ('standardversion', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,438 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,438 INFO sqlalchemy.engine.Engine [cached since 0.02866s ago] ('standardassignment', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,440 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,440 INFO sqlalchemy.engine.Engine [cached since 0.03135s ago] ('validationresult', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,442 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,443 INFO sqlalchemy.engine.Engine [cached since 0.03356s ago] ('auditlog', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,444 INFO sqlalchemy.engine.Engine 
+DROP TABLE validationresult
+2026-02-20 16:03:38,444 INFO sqlalchemy.engine.Engine [no key 0.00013s] ()
+2026-02-20 16:03:38,469 INFO sqlalchemy.engine.Engine 
+DROP TABLE standardassignment
+2026-02-20 16:03:38,469 INFO sqlalchemy.engine.Engine [no key 0.00019s] ()
+2026-02-20 16:03:38,480 INFO sqlalchemy.engine.Engine 
+DROP TABLE standardversion
+2026-02-20 16:03:38,481 INFO sqlalchemy.engine.Engine [no key 0.00017s] ()
+2026-02-20 16:03:38,490 INFO sqlalchemy.engine.Engine 
+DROP TABLE document
+2026-02-20 16:03:38,491 INFO sqlalchemy.engine.Engine [no key 0.00021s] ()
+2026-02-20 16:03:38,544 INFO sqlalchemy.engine.Engine 
+DROP TABLE auditlog
+2026-02-20 16:03:38,544 INFO sqlalchemy.engine.Engine [no key 0.00019s] ()
+2026-02-20 16:03:38,555 INFO sqlalchemy.engine.Engine 
+DROP TABLE standard
+2026-02-20 16:03:38,555 INFO sqlalchemy.engine.Engine [no key 0.00018s] ()
+2026-02-20 16:03:38,563 INFO sqlalchemy.engine.Engine 
+DROP TABLE folder
+2026-02-20 16:03:38,564 INFO sqlalchemy.engine.Engine [no key 0.00015s] ()
+2026-02-20 16:03:38,577 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = $1::VARCHAR AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != $2::VARCHAR
+2026-02-20 16:03:38,578 INFO sqlalchemy.engine.Engine [generated in 0.00023s] ('targettype', 'pg_catalog')
+2026-02-20 16:03:38,582 INFO sqlalchemy.engine.Engine DROP TYPE targettype
+2026-02-20 16:03:38,582 INFO sqlalchemy.engine.Engine [no key 0.00014s] ()
+2026-02-20 16:03:38,587 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = $1::VARCHAR AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != $2::VARCHAR
+2026-02-20 16:03:38,587 INFO sqlalchemy.engine.Engine [cached since 0.009449s ago] ('validationstatus', 'pg_catalog')
+2026-02-20 16:03:38,591 INFO sqlalchemy.engine.Engine DROP TYPE validationstatus
+2026-02-20 16:03:38,591 INFO sqlalchemy.engine.Engine [no key 0.00013s] ()
+2026-02-20 16:03:38,638 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,638 INFO sqlalchemy.engine.Engine [cached since 0.2288s ago] ('folder', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,643 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,643 INFO sqlalchemy.engine.Engine [cached since 0.234s ago] ('document', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,646 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,646 INFO sqlalchemy.engine.Engine [cached since 0.237s ago] ('standard', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,649 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,649 INFO sqlalchemy.engine.Engine [cached since 0.2398s ago] ('standardversion', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,651 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,651 INFO sqlalchemy.engine.Engine [cached since 0.2424s ago] ('standardassignment', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,654 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,655 INFO sqlalchemy.engine.Engine [cached since 0.2456s ago] ('validationresult', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,658 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2026-02-20 16:03:38,658 INFO sqlalchemy.engine.Engine [cached since 0.2489s ago] ('auditlog', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2026-02-20 16:03:38,661 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = $1::VARCHAR AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != $2::VARCHAR
+2026-02-20 16:03:38,661 INFO sqlalchemy.engine.Engine [cached since 0.08348s ago] ('targettype', 'pg_catalog')
+2026-02-20 16:03:38,668 INFO sqlalchemy.engine.Engine CREATE TYPE targettype AS ENUM ('FOLDER', 'DOCUMENT')
+2026-02-20 16:03:38,668 INFO sqlalchemy.engine.Engine [no key 0.00015s] ()
+2026-02-20 16:03:38,718 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = $1::VARCHAR AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != $2::VARCHAR
+2026-02-20 16:03:38,718 INFO sqlalchemy.engine.Engine [cached since 0.1411s ago] ('validationstatus', 'pg_catalog')
+2026-02-20 16:03:38,723 INFO sqlalchemy.engine.Engine CREATE TYPE validationstatus AS ENUM ('PASS', 'FAIL', 'WARN', 'COMPLIANT', 'NON_COMPLIANT')
+2026-02-20 16:03:38,723 INFO sqlalchemy.engine.Engine [no key 0.00014s] ()
+2026-02-20 16:03:38,730 INFO sqlalchemy.engine.Engine 
+CREATE TABLE folder (
+	created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	id UUID NOT NULL, 
+	name VARCHAR NOT NULL, 
+	parent_id UUID, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(parent_id) REFERENCES folder (id)
+)
+
+
+2026-02-20 16:03:38,730 INFO sqlalchemy.engine.Engine [no key 0.00015s] ()
+2026-02-20 16:03:38,766 INFO sqlalchemy.engine.Engine CREATE INDEX ix_folder_parent_id ON folder (parent_id)
+2026-02-20 16:03:38,766 INFO sqlalchemy.engine.Engine [no key 0.00018s] ()
+2026-02-20 16:03:38,776 INFO sqlalchemy.engine.Engine CREATE INDEX ix_folder_name ON folder (name)
+2026-02-20 16:03:38,776 INFO sqlalchemy.engine.Engine [no key 0.00015s] ()
+2026-02-20 16:03:38,788 INFO sqlalchemy.engine.Engine 
+CREATE TABLE standard (
+	created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	id UUID NOT NULL, 
+	name VARCHAR NOT NULL, 
+	description VARCHAR, 
+	PRIMARY KEY (id)
+)
+
+
+2026-02-20 16:03:38,788 INFO sqlalchemy.engine.Engine [no key 0.00025s] ()
+2026-02-20 16:03:38,807 INFO sqlalchemy.engine.Engine CREATE INDEX ix_standard_name ON standard (name)
+2026-02-20 16:03:38,807 INFO sqlalchemy.engine.Engine [no key 0.00019s] ()
+2026-02-20 16:03:38,817 INFO sqlalchemy.engine.Engine 
+CREATE TABLE auditlog (
+	id UUID NOT NULL, 
+	actor_id VARCHAR NOT NULL, 
+	action VARCHAR NOT NULL, 
+	target_id UUID NOT NULL, 
+	details JSONB, 
+	timestamp TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-02-20 16:03:38,817 INFO sqlalchemy.engine.Engine [no key 0.00015s] ()
+2026-02-20 16:03:38,836 INFO sqlalchemy.engine.Engine CREATE INDEX ix_auditlog_action ON auditlog (action)
+2026-02-20 16:03:38,836 INFO sqlalchemy.engine.Engine [no key 0.00021s] ()
+2026-02-20 16:03:38,847 INFO sqlalchemy.engine.Engine CREATE INDEX ix_auditlog_actor_id ON auditlog (actor_id)
+2026-02-20 16:03:38,847 INFO sqlalchemy.engine.Engine [no key 0.00017s] ()
+2026-02-20 16:03:38,857 INFO sqlalchemy.engine.Engine CREATE INDEX ix_auditlog_target_id ON auditlog (target_id)
+2026-02-20 16:03:38,857 INFO sqlalchemy.engine.Engine [no key 0.00021s] ()
+2026-02-20 16:03:38,869 INFO sqlalchemy.engine.Engine 
+CREATE TABLE document (
+	created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	id UUID NOT NULL, 
+	filename VARCHAR NOT NULL, 
+	minio_version_id VARCHAR, 
+	hash VARCHAR NOT NULL, 
+	folder_id UUID, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(folder_id) REFERENCES folder (id)
+)
+
+
+2026-02-20 16:03:38,869 INFO sqlalchemy.engine.Engine [no key 0.00019s] ()
+2026-02-20 16:03:38,889 INFO sqlalchemy.engine.Engine CREATE INDEX ix_document_filename ON document (filename)
+2026-02-20 16:03:38,889 INFO sqlalchemy.engine.Engine [no key 0.00024s] ()
+2026-02-20 16:03:38,901 INFO sqlalchemy.engine.Engine CREATE INDEX ix_document_hash ON document (hash)
+2026-02-20 16:03:38,901 INFO sqlalchemy.engine.Engine [no key 0.00017s] ()
+2026-02-20 16:03:38,912 INFO sqlalchemy.engine.Engine CREATE INDEX ix_document_folder_id ON document (folder_id)
+2026-02-20 16:03:38,912 INFO sqlalchemy.engine.Engine [no key 0.00017s] ()
+2026-02-20 16:03:38,923 INFO sqlalchemy.engine.Engine 
+CREATE TABLE standardversion (
+	created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	id UUID NOT NULL, 
+	standard_id UUID NOT NULL, 
+	version_number INTEGER NOT NULL, 
+	rules_json JSONB, 
+	is_active BOOLEAN NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(standard_id) REFERENCES standard (id)
+)
+
+
+2026-02-20 16:03:38,924 INFO sqlalchemy.engine.Engine [no key 0.00024s] ()
+2026-02-20 16:03:38,946 INFO sqlalchemy.engine.Engine 
+CREATE TABLE standardassignment (
+	created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	id UUID NOT NULL, 
+	target_id UUID NOT NULL, 
+	target_type targettype NOT NULL, 
+	standard_version_id UUID NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(standard_version_id) REFERENCES standardversion (id)
+)
+
+
+2026-02-20 16:03:38,946 INFO sqlalchemy.engine.Engine [no key 0.00023s] ()
+2026-02-20 16:03:38,959 INFO sqlalchemy.engine.Engine CREATE INDEX ix_standardassignment_target_id ON standardassignment (target_id)
+2026-02-20 16:03:38,959 INFO sqlalchemy.engine.Engine [no key 0.00016s] ()
+2026-02-20 16:03:38,969 INFO sqlalchemy.engine.Engine CREATE INDEX ix_standardassignment_target_type ON standardassignment (target_type)
+2026-02-20 16:03:38,969 INFO sqlalchemy.engine.Engine [no key 0.00018s] ()
+2026-02-20 16:03:38,981 INFO sqlalchemy.engine.Engine 
+CREATE TABLE validationresult (
+	created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
+	id UUID NOT NULL, 
+	document_id UUID NOT NULL, 
+	standard_version_id UUID NOT NULL, 
+	status validationstatus NOT NULL, 
+	report_json JSONB, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(document_id) REFERENCES document (id), 
+	FOREIGN KEY(standard_version_id) REFERENCES standardversion (id)
+)
+
+
+2026-02-20 16:03:38,981 INFO sqlalchemy.engine.Engine [no key 0.00016s] ()
+2026-02-20 16:03:39,001 INFO sqlalchemy.engine.Engine CREATE INDEX ix_validationresult_status ON validationresult (status)
+2026-02-20 16:03:39,001 INFO sqlalchemy.engine.Engine [no key 0.00019s] ()
+2026-02-20 16:03:39,012 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     Application startup complete.
+DEBUG: Bypassing authentication, returning Admin User
+2026-02-20 16:03:45,656 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-02-20 16:03:45,681 INFO sqlalchemy.engine.Engine SELECT auditlog.id, auditlog.actor_id, auditlog.action, auditlog.target_id, auditlog.details, auditlog.timestamp 
+FROM auditlog ORDER BY auditlog.timestamp DESC 
+ LIMIT $1::INTEGER OFFSET $2::INTEGER
+2026-02-20 16:03:45,682 INFO sqlalchemy.engine.Engine [generated in 0.00027s] (100, 0)
+INFO:     127.0.0.1:58433 - "GET /api/v1/audit/ HTTP/1.1" 200 OK
+2026-02-20 16:03:45,693 INFO sqlalchemy.engine.Engine ROLLBACK
+WARNING:  WatchFiles detected changes in 'backend\app\database.py'. Reloading...
